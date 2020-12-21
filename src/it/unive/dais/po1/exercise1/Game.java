@@ -48,8 +48,8 @@ public class Game {
      * @param board the board to be printed
      */
     public static void print(TicTacToeBoard board) {
-        for(int x = 0; x < 3; x++) {
-            for (int y = 0; y < 3; y++) {
+        for(int y = 0; y < 3; y++) {
+            for (int x = 0; x < 3; x++) {
                 Mark s = board.getMark(x, y);
                 System.out.print((s== null ? " e " : (s==Mark.getCircle()? " O " : " X " )));
             }
